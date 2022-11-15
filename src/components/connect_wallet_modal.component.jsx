@@ -4,7 +4,7 @@ const ConnectWalletModal = ({ setWallet }) => {
   return (
     <>
       <div
-        className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 bg-white
+        className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 bg-white
       w-[75%] md:w-[35%]  rounded-[16px]"
       >
         <div className="flex justify-between w-[85%] m-auto pb-[1.5rem] pt-[1rem]">
@@ -38,7 +38,7 @@ const ConnectWalletModal = ({ setWallet }) => {
         </div>
       </div>
       <div
-        className="absolute z-40 top-0 left-0 bg-[#4040404d] w-full h-full overflow-hidden
+        className="fixed z-40 top-0 left-0 bg-[#4040404d] w-full h-[100%] overflow-hidden
       "
         onClick={setWallet}
       ></div>

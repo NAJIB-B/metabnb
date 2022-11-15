@@ -18,7 +18,11 @@ const BottomSection = () => {
           </button>
         </div>
         <div className="flex-[60%] text-center">
-          <img src={image} alt="" className="inline-block m-auto"></img>
+          <img
+            src={image}
+            alt=""
+            className="inline-block m-auto small:pt-[2rem]"
+          ></img>
         </div>
       </div>
     </>

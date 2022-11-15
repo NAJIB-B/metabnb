@@ -11,7 +11,7 @@ const MobileNav = ({ setNav, setWallet }) => {
     <>
       <div
         className="fixed  top-0 left-0  flex z-30 bg-[#4040404d]  justify-center
-       pt-[4rem] w-full h-[100vh] text-center "
+       pt-[4rem] w-full h-[100vh] text-center overflow-hidden"
       >
         <div className="absolute top-[1.5rem] right-[2rem]">
           <h1 onClick={setNav} className="text-white text-[1.5rem]">
@@ -38,7 +38,7 @@ const MobileNav = ({ setNav, setWallet }) => {
         </ul>
       </div>
       <div
-        className="absolute z-20 top-0 left-0 bg-[#404040b3] blur-[16px] w-full h-full overflow-hidden
+        className="fixed z-20 top-0 left-0 bg-[#404040b3] blur-[16px] w-full h-[100%] overflow-hidden
       "
       ></div>
     </>

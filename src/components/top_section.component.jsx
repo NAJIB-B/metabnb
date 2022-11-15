@@ -4,7 +4,7 @@ const TopSection = () => {
     <>
       <div className="flex w-[90%] m-auto p-[1rem] small:flex-col">
         <div className="flex-[60%] p-[2rem]">
-          <h1 className="text-[4.5rem] text-left small:text-[3rem]">
+          <h1 className="text-[4.5rem] text-left small:text-[1.7rem]">
             Rent a <span className="text-[#A02279]">Place </span> away from
             <span className="text-[#A02279]"> Home </span> in the
             <span className="text-[#A02279]"> Metaverse </span>
