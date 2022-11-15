@@ -16,7 +16,14 @@ import frame14 from "../assets/Frame 151 (14).png";
 import frame15 from "../assets/Frame 151 (15).png";
 import { Icon } from "@iconify/react";
 
+import { useContext, useEffect } from "react";
+import { MetaContext } from "../context";
+
 const Place_to_stay = () => {
+  const { setMobileNav } = useContext(MetaContext);
+  useEffect(() => {
+    setMobileNav(false);
+  }, []);
   const images = [
     frame4,
     frame5,

@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { MetaContext } from "../../context";
 
-const MobileNav = ({ setNav, setWallet }) => {
+const MobileNav = () => {
+  const { setNav, setWallet, mobileNav, connectWallet } =
+    useContext(MetaContext);
   const navlinks = [
     { name: "Home", link: "" },
     { name: "Place to stay", link: "placeToStay" },

@@ -4,7 +4,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MobileNav from "./nav_mobile.component";
 import { useState } from "react";
 import ConnectWalletModal from "../connect_wallet_modal.component";
+import { useContext } from "react";
+import { MetaContext } from "../../context";
 const Nav = () => {
+  const { setNav, setWallet, mobileNav, connectWallet } =
+    useContext(MetaContext);
   const navlinks = [
     { name: "Home", link: "" },
     { name: "Place to stay", link: "placeToStay" },
@@ -12,14 +16,14 @@ const Nav = () => {
     { name: "Community", link: "" },
   ];
 
-  const [mobileNav, setMobileNav] = useState(false);
-  const [connectWallet, setConnectWallet] = useState(false);
-  const setWallet = () => {
-    setConnectWallet(!connectWallet);
-  };
-  const setNav = () => {
-    setMobileNav(!mobileNav);
-  };
+  // const [mobileNav, setMobileNav] = useState(false);
+  // const [connectWallet, setConnectWallet] = useState(false);
+  // const setWallet = () => {
+  //   setConnectWallet(!connectWallet);
+  // };
+  // const setNav = () => {
+  //   setMobileNav(!mobileNav);
+  // };
 
   return (
     <>
